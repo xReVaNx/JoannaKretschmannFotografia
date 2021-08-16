@@ -1,13 +1,14 @@
 import React from 'react';
-import { render } from 'react-dom';
-import style from './scss/Header.scss';
+import './scss/Header.scss';
+import logo from '../img/Asia.svg';
+
 
 function Header(){
     return(
         <>
-        <div className="container">
+        <div className="header_container">
             <div className="header">
-                Joanna Kretschmann Fotografia
+                <img src={logo} alt="Joanna Kretschmann Fotografia"/>
             </div>
             </div>
         </>
