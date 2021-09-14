@@ -1,0 +1,30 @@
+@import "colors";
+
+input{
+    margin: 15px;
+    width: 200px;
+    border: 4px solid $second-color;
+    background-color: $primary-color;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+select{
+    margin: 15px;
+    width: 200px;
+    border: 4px solid $second-color;
+    background-color: $primary-color;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+textarea{
+    margin: 15px;
+    width: 400px;
+    height: 150px;
+    border: 4px solid $second-color;
+    background-color: $primary-color;
+    border-radius: 10px;
+    font-size: 18px;
+    resize: none;
+}

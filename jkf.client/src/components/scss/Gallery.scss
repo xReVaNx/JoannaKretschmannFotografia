@@ -1,15 +1,6 @@
 @import "colors";
 @import "links";
 
-
-.gallery_container{
-    width: 100%;
-    min-height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .gallery{
     list-style-type: none;
     display: flex;
@@ -21,53 +12,87 @@
 
 .gallery_option{
     width: 500px;
-    height: auto;
-    border: 2px solid black;
+    height: 350px;
     margin: 30px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.gallery_option img{
-    filter: blur(0px);
-    transition-duration: 1s;
-    width: 500px;
-    height: auto;
-}
-
-.gallery_option:hover img{
-    filter: blur(2px);
-}
-
-.gallery_option:hover{
-    cursor: pointer;
-    border-color: $third-color;
-}
-
-.gallery_option:hover .innerText-bg{
-    filter: opacity(50%);
-}
-
-.innerText{
-    color: white;
-    width: 500px;
-    height: 45px;
-    font-size: 32px;
-    font-family: 'Playfair Display';
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 0;
-    position: absolute;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    transition: box-shadow 1s;
 }
 
-.innerText-bg{
-    position: absolute;
-    width: 500px;
-    height: 45px;
-    background-color: black;
-    filter: opacity(0%);
-    transition-duration: 1s;
+.gallery_option:hover{
+    box-shadow: inset 0px 0px 0px 200px rgba(124, 77, 101, 0.85);
+}
+
+.gallery_option::after{
+    opacity: 0;
+    border-radius: 7px;
+    transition: box-shadow 1s, font-size .5s, opacity 1s;
+}
+
+.gallery_option:hover::after{
+    width: 55%;
+    height: 55%;
+    display: block;
+    white-space: pre;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+#samochody{
+    background-image: url(../../img/Samochody.jpg); 
+}
+
+#samochody::after{
+    content: "SAMOCHODY";
+}
+
+#eventy{
+    background-image: url(../../img/Eventy.jpg);
+}
+
+#eventy::after{
+    content: "EVENTY";
+}
+
+#taneczne{
+    background-image: url(../../img/Taneczne.jpg);
+}
+
+#taneczne::after{
+    content: "TANECZNE";
+}
+
+#portrety{
+    background-image: url(../../img/Portrety.jpg);
+}
+
+#portrety::after{
+    content: "PORTRETY";
+}
+
+#imprezy{
+    background-image: url(../../img/Imprezy.jpg);
+}
+
+#imprezy::after{
+    content: "IMPREZY";
+}
+
+#sluby{
+    background-image: url(../../img/Sluby.jpg);
+}
+
+#sluby::after{
+    content: "ŚLUBY";
 }
