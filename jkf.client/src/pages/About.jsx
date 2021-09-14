@@ -1,61 +1,64 @@
 import React from 'react';
-import { Swiper, SwiperSlide} from 'swiper/react';
-import SwiperCore, { Pagination, Navigation, EffectCoverflow, Autoplay } from 'swiper/core';
 import '../components/scss/About.scss';
 import '../components/scss/Routes.scss';
-import Asia from '../img/Asia.jpg';
 
-// Import Swiper styles
-import "swiper/swiper.scss";
-import "swiper/components/pagination/pagination.scss"
-import "swiper/components/navigation/navigation.scss"
+import Asia from '../img/Asia.png';
+import Civic from '../img/Civic.jpg';
+import Trunks from '../img/Trunks.jpg';
+import BMW from '../img/BMW.jpg';
     
-
-SwiperCore.use([Pagination, Navigation, EffectCoverflow, Autoplay]);
 
 function About(){
     return(
         <div className="routes_container">
-            <div className="swipe_container">
-            <Swiper slidesPerView={3} effect={'coverflow'} spaceBetween={5} centeredSlides={true} initialSlide={1} loop={false} pagination={{"clickable": true }} navigation={true} 
-            coverflowEffect={{ "rotate": 0, "stretch": 100, "depth": 300, "modifier": 3, "slideShadows": false }} autoplay={{ "delay": 3000 }} className="mySwiper">
-                <SwiperSlide>
-            <div className="businessCard">
-                    <h3>Zainteresowania</h3>
-                    <div className="content">
-                        <span>
-                        Cześć, mam na imię Asia i nie wiem co tutaj wpisać XDDDD. Dobra, niech to będzie przykładowy tekst, bo kreatywny nie jestem, i tyle xD. A no tak
-                        jestem profesjonalnym fotografem z ponad 7 letnim doświadczeniem. Też Cię kocham &lt;3.
-                        </span>
-                    </div>
+            <div className="AboutOption">
+                <div className="AboutOption-image">
+                <img src={Asia} alt="Joanna Kretschmann"/>
                 </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                <div className="businessCard-about">
-                    <h3>Joanna Kretschmann</h3>
-                    <img src={Asia} alt="Joanna Kretschmann"/>
-                    <div className="content">
-                        <span>
-                        Cześć, mam na imię Asia i nie wiem co tutaj wpisać XDDDD. Dobra, niech to będzie przykładowy tekst, bo kreatywny nie jestem, i tyle xD. A no tak
-                        jestem profesjonalnym fotografem z ponad 7 letnim doświadczeniem. Też Cię kocham &lt;3.
-                        </span>
-                    </div>
-                </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="businessCard">
-                    <h3>Fotografia</h3>
-                    <div className="content">
-                        <span>
-                        Cześć, mam na imię Asia i nie wiem co tutaj wpisać XDDDD. Dobra, niech to będzie przykładowy tekst, bo kreatywny nie jestem, i tyle xD. A no tak
-                        jestem profesjonalnym fotografem z ponad 7 letnim doświadczeniem. Też Cię kocham &lt;3.
-                        </span>
-                    </div>
-                </div>
-                </SwiperSlide>
-                </Swiper>
+                <div className="AboutOption-text">
+                    <p>Cześć, mam na imię Asia i zajmuję się fotografią
+                        od 7 lat. Quae et deleniti rerum et et dolor iste quis aut. Repellat veniam numquam. Libero velit esse qui quia in distinctio ducimus accusantium voluptates. Minus in est et nisi quos. Est eum dolores temporibus ipsam fugit voluptatum occaecati eos.
+                    </p>
                 </div>
             </div>
+            <div className="AboutOption">
+                <div className="AboutOption-text">
+                    <p>Voluptates consectetur autem perspiciatis ratione vitae animi magnam id.
+Similique quia laborum autem temporibus et id est similique.
+Officia ad quo. Nobis quam dolor corporis.
+Eaque commodi aspernatur id quo odio recusandae cumque atque sit. Animi quis voluptate ut cumque ut quis quam.
+Est quo iusto aut quis ex quos.
+Ut fuga repellat.
+Et sint eum. Explicabo commodi aliquid.
+Velit repellat debitis voluptatem cum repellendus a tempora consequatur.
+Rerum dicta minus porro est eaque itaque.</p>
+                </div>
+                <div className="AboutOption-image">
+                <img src={Civic} alt="Civic"/>
+                </div>
+            </div>
+            <div className="AboutOption">
+                <div className="AboutOption-image">
+                    <img src={Trunks} alt="Trunks"/>
+                </div>
+                <div className="AboutOption-text">
+                    <p>In repellendus fugiat ad exercitationem reiciendis nam est esse. Qui excepturi aut at.
+Veritatis et est similique est incidunt at aut.
+Illo rerum maxime voluptatum asperiores ut molestiae totam.
+Ea fugiat ut iusto velit velit libero error incidunt odio.
+Consectetur ut cum.</p>
+                </div>
+            </div>
+            <div className="AboutOption">
+                <div className="AboutOption-text">
+                    <p>Exercitationem aperiam laudantium eligendi dolor itaque animi eos sequi.
+Delectus commodi cumque et molestias. Voluptatem voluptatem et aut molestiae doloribus non quia et.</p>
+                </div>
+                <div className="AboutOption-image">
+                <img src={BMW} alt="BMW"/>
+                </div>
+            </div>
+        </div>
     )
 }
 

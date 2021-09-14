@@ -1,30 +1,67 @@
 @import "colors";
 
-input{
-    margin: 15px;
-    width: 200px;
-    border: 4px solid $second-color;
-    background-color: $primary-color;
-    border-radius: 10px;
-    font-size: 18px;
-}
+.form-container{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: cemter;
+    justify-content: center;
+    text-align: center;
 
-select{
-    margin: 15px;
-    width: 200px;
-    border: 4px solid $second-color;
-    background-color: $primary-color;
-    border-radius: 10px;
-    font-size: 18px;
-}
+    input{
+        margin-top: 5px;
+        margin-bottom: 15px;
+        padding: 5px;
+        width: 200px;
+        border: none;
+        border-bottom: 4px solid $second-color;
+        border-radius: 10px;
+        background: $primary-color;
+        font-size: 18px;
+        transition-duration: .5s;
+    }
 
-textarea{
-    margin: 15px;
-    width: 400px;
-    height: 150px;
-    border: 4px solid $second-color;
-    background-color: $primary-color;
-    border-radius: 10px;
-    font-size: 18px;
-    resize: none;
+    input:focus, select:focus, textarea:focus{
+        outline: none;
+    }
+
+    label{
+        margin: 0;
+        font-weight: bold;
+    }
+    
+    select{
+        margin: 5px;
+        padding: 5px;
+        width: 200px;
+        border: 0;
+        border-bottom: 4px solid $second-color;
+        background: $primary-color;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+    
+    textarea{
+        margin: 5px;
+        padding: 5px;
+        width: 400px;
+        height: 150px;
+        border: 4px solid $second-color;
+        background: $primary-color;
+        border-radius: 10px;
+        font-size: 18px;
+        resize: none;
+    }
+
+    button{
+        width: 80px;
+        height: 30px;
+        border-radius: 10px;
+        background: $second-color;
+    }
+
+    button:hover{
+        color: white;
+    }
+
 }
