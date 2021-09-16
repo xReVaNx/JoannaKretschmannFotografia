@@ -17,16 +17,16 @@ class Contact extends Component{
                         <p>kretschmannjoanna@gmail.com</p>
                         <img src={MailLogo} alt="mail"/>
                         <div className="social">
-                            <a href="https://www.instagram.com/dwuchromian_potasu/" target="_blank">
+                            <a href="https://www.instagram.com/dwuchromian_potasu/" rel="noreferrer" target="_blank">
                             <SiInstagram/>
                             </a>
-                            <a href="https://www.facebook.com/dwuchromian.potasu" target="_blank">
+                            <a href="https://www.facebook.com/dwuchromian.potasu" rel="noreferrer" target="_blank">
                             <SiFacebook/>
                             </a>
-                            <a href="https://www.tiktok.com/@dwuchromian_potasu?" target="_blank">
+                            <a href="https://www.tiktok.com/@dwuchromian_potasu?" rel="noreferrer" target="_blank">
                             <SiTiktok/>
                             </a>
-                            <a href="https://www.linkedin.com/in/joanna-kretschmann-95b151220/" target="_blank">
+                            <a href="https://www.linkedin.com/in/joanna-kretschmann-95b151220/" rel="noreferrer" target="_blank">
                             <SiLinkedin/>
                             </a>
                         </div>
